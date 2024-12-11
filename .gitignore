@@ -9,3 +9,4 @@ __pycache__/
 
 # Streamlit cache
 .streamlit/
+.txt

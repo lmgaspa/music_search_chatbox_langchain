@@ -3,18 +3,15 @@ from googleapiclient.discovery import build
 from dotenv import load_dotenv
 import os
 
-# Carregar variáveis de ambiente
 load_dotenv()
 
-# Obter as chaves da API do .env
-YOUTUBE_API_KEY = os.getenv("API_KEY")  # Certifique-se de que o .env tem a variável API_KEY
+YOUTUBE_API_KEY = os.getenv("API_KEY")
 
 # Verificar se a chave foi carregada
 if not YOUTUBE_API_KEY:
     st.error("API_KEY não foi carregada. Verifique o arquivo .env e a configuração do código.")
     raise SystemExit("API_KEY não encontrada no .env. Encerrando o programa.")
 
-# Função para buscar músicas no YouTube
 def search_music_youtube(query, max_results=5):
     """
     Busca músicas no YouTube com base na consulta do usuário.
@@ -45,7 +42,6 @@ def main():
     st.title("🎵 YouTube Music Searcher")
     st.write("Procure por suas músicas favoritas diretamente no YouTube!")
 
-    # Entrada do usuário para busca
     user_input = st.text_input("Digite o nome da música, artista ou gênero:", "")
 
     if st.button("Buscar"):
