@@ -16,9 +16,6 @@ Link para assistir no YouTube.
 🖥️ Interface intuitiva e rápida, desenvolvida com Streamlit.
 🌐 Integração com a YouTube Data API v3.
 
-🛠️ Requisitos
-Antes de executar o projeto, certifique-se de ter:
-
-✅ Python 3.7 ou superior.
-✅ Uma chave válida para a YouTube Data API v3. Obter uma aqui.
+🛠️ Teste nosso website
+https://music-search-liart.vercel.app/
 
